@@ -1,12 +1,12 @@
 # Transformer PyTorch
- Implementation of [Attention Is All You Need](https://arxiv.org/abs/1706.03762)<br>
+ Implementation of [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
  by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.<br><br>
  
  Used for language translation on a small german-english dataset with 230.000 sentences and mean 8 tokens per sentence.
 
 # Training
 Model size: 17 Mio. parameters<br>
-batch time: 221ms<br><br>
+batch time: 221ms on GTX 1080 TI<br><br>
 layers: 6<br>
 heads: 8<br>
 batch size: 128<br>
