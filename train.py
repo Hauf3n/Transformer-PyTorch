@@ -76,6 +76,7 @@ def train(arguments):
     # train
     for epoch in range(epochs):
         print(f'epoch: {epoch} | learning rate: {scheduler.get_lr()[0]}')
+        #print(f'epoch: {epoch}')
         
         epoch_start = time.time()
         
@@ -126,7 +127,7 @@ if __name__ == "__main__":
     
     # set hyperparameters
     
-    arguments.add_argument('-lr', type=float, default=5e-4)
+    arguments.add_argument('-lr', type=float, default=1.5e-4)
     arguments.add_argument('-scheduler_step_size', type=int, default=2)
     arguments.add_argument('-scheduler_gamma', type=float, default=0.96)
     arguments.add_argument('-batch_size', type=int, default=128)
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     arguments.add_argument('-epochs', type=int, default=40)
     arguments.add_argument('-num_cells', type=int, default=6)
     arguments.add_argument('-cell_embedding_size', type=int, default=64)
-    arguments.add_argument('-num_heads', type=int, default=6)
+    arguments.add_argument('-num_heads', type=int, default=8)
     arguments.add_argument('-language_in', default='de')
     arguments.add_argument('-language_out', default='en')
     arguments.add_argument('-report', type=int, default=250)
